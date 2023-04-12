@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student_Master.master.cs" Inherits="StudentExamPortal.Student_Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Student_Master</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="CSS/WholeCss.css" rel="stylesheet" />
+         </asp:ContentPlaceHolder>
+   
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="CSS/StudentMaster.css" rel="stylesheet" />
+ 
+</head>
+
+
+<body>
+    <form runat="server" autocomplete="off">
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="../Student Forms/ShowProfile.aspx">
+                <img src="/Images/EPIcon.png" width="70" height="70" style="margin-left: 25px;" class="d-inline-block align-top" alt=""></a>
+            
+            <a class="navbar-brand" href="../Student Forms/ShowProfile.aspx">Exam Portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../Student Forms/ShowProfile.aspx">Show Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Student Forms/ViewTimeTable.aspx">View Time Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Student Forms/ApplyForExam.aspx">Apply for Exam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../Student Forms/AppearForExam.aspx">Give Exam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../Student Forms/Result.aspx">View Result</a>
+                    </li>
+                    
+                    <li class=" nav-item ">
+                           
+                        
+                    </li>
+                    
+                </ul>
+                <div class="ml-auto">
+                                 
+                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-outline-danger my-2 my-sm-0" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                                 
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <footer class="w-100 py-4 flex-shrink-0 footer" >
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">Good to know</h5>
+                    <p class="small text-muted">This website for Student Exam Portal.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#"></a></p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="../Student Forms/ShowProfile.aspx">Show Profile</a></li>
+                        <li><a href="../Student Forms/ViewTimeTable.aspx">View TimeTable</a></li>
+                       
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Contact</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><span>Suraj Ingole</span></li>
+                        <li><span>suraj.ingole7024@gmail.com</span></li>
+                        <li>+91-9595556935</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    </form>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
