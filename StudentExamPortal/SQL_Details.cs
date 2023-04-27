@@ -57,7 +57,7 @@ namespace StudentExamPortal
                 ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
                 MailMessage message = new MailMessage();
 
-                message.From = new MailAddress("suraj.ingole7024@outlook.com");
+                message.From = new MailAddress("************************");
                 message.To.Add(new MailAddress(To1));
                 message.Subject = subject1;
                 message.IsBodyHtml = false; //to make message body as html  
